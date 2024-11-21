@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CineXpress</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <!--Navbar-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container-fluid">
+                <div class="row">
+                  <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><img src="/assets/img/logo-pequeño.png" alt="..." with="150px"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                              <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                            </svg> Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                                <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+                              </svg> Cartelera</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3z"/>
+                              </svg> Mis tickets</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+                              </svg> Ayuda</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+               </div>
+        </div>
+    </div>
+    <!--Banner 1-->
+    <div class="container-fluid">
+        <div class="row text-black">
+          <div class="card text-bg border-0">
+            <img src="/assets/img/banner-1.jpg">
+            <div class="card-img-overlay position-absolute top-50 start-50 translate-middle">
+              <h5 class="card-title text-center justify-content-center align-items-center text-light">No hagas más fila</h5>
+              <h5 class="card-text text-center text-light">y compra online</h5>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                    <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3z"/>
+                  </svg> Tickets</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Buscador-->
+      <div class="class">
+        <div class="row">
+            <div class="row ms-2 mt-5 mb-5 justify-content-center">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Busca por películas, directores o actores" aria-label="Search">
+                  <button type="button" class="btn btn-danger">Buscar</button>
+                </form>
+              </div>
+        </div>
+      </div>
+      <!--Título 1-->
+      <div class="container">
+        <div class="row">
+            <h1 class="titulo-1 text-center">Estrenos</h1>
+        </div>
+      </div>
+      <!--Cards de estrenos-->
+      <div class="container">
+        <div class="row">
+            <div id="productSlider" class="carousel slide my-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/sonrie1.jpeg" class="card-img-top" alt="Producto 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sonríe 2</h5>
+                                            <p class="card-text">128 min. | +14</p>
+                                            <button type="button" class="btn btn-danger">Ver horarios</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/pandaafrica.jpg" class="card-img-top" alt="Producto 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Un panda en África</h5>
+                                            <p class="card-text">84 min. | TE</p>
+                                            <button type="button" class="btn btn-danger">Ver horarios</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/guason2.jpg" class="card-img-top" alt="Producto 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Joker: Folie à Deux</h5>
+                                            <p class="card-text">138 min. | +14</p>
+                                            <button type="button" class="btn btn-danger">Ver horarios</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/alas1.jpg" class="card-img-top" alt="Producto 4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Alas blancas</h5>
+                                            <p class="card-text">121 min. | TE +7</p>
+                                            <button type="button" class="btn btn-danger">Ver horarios</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/sustancia1.jpg" class="card-img-top" alt="Producto 5">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La sustancia</h5>
+                                            <p class="card-text">131 min. | +18</p>
+                                            <button type="button" class="btn btn-danger">Ver horarios</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            
+        </div>
+      </div>
+      <!--Banner 2-->
+      <div class="container-fluid">
+        <div class="row text-black">
+          <div class="card text-bg border-0">
+            <img src="/assets/img/banner-2.png" class="card-img" alt="...">
+            <div class="card-img-overlay position-absolute top-50 start-50 translate-middle mt-3">
+              <h5 class="card-title text-center justify-content-center align-items-center text-light">¡Tenemos descuentos!</h5>
+              <div class="text-center">
+                <button type="button" class="btn btn-danger">¡Revísalos!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Título 2-->
+      <div class="container">
+        <div class="row">
+            <h1 class="titulo-2 text-center">Próximos estrenos</h1>
+        </div>
+      </div>
+      <!--Cards próximos estrenos-->
+      <div class="container">
+        <div class="row">
+            <div id="productSlider" class="carousel slide my-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/terrifier-1.jpg" class="card-img-top" alt="Producto 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Terrifier 3 | 31 octubre</h5>
+                                            <p class="card-text">125 min. | +18</p>
+                                            <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                                <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3z"/>
+                                              </svg> Tickets preventa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/godzilla-1.jpg" class="card-img-top" alt="Producto 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Godzilla minus one | 31 octubre</h5>
+                                            <p class="card-text">124 min. | TE +7</p>
+                                            <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                                <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3z"/>
+                                              </svg> Tickets preventa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/venom-1.jpg" class="card-img-top" alt="Producto 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Venom | 24 octubre</h5>
+                                            <p class="card-text">110 min. | +14</p>
+                                            <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                                <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3z"/>
+                                              </svg> Tickets preventa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <div class="row text-center">
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/caninas-1.jpg" class="card-img-top" alt="Producto 4">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Aventuras caninas |31 octubre</h5>
+                                            <p class="card-text">74 min. | TE</p>
+                                            <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                                <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3z"/>
+                                              </svg> Tickets preventa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card mb-4">
+                                        <img src="/assets/img/vuelo-1.jpg" class="card-img-top" alt="Producto 5">
+                                        <div class="card-body">
+                                            <h5 class="card-title">La caída del vuelo 811 | 31 octubre</h5>
+                                            <p class="card-text">96 min. | +14</p>
+                                            <button type="button" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-fill" viewBox="0 0 16 16">
+                                                <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3z"/>
+                                              </svg> Tickets preventa</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+            
+        </div>
+      </div>
+      <!--Título 3-->
+      <div class="container">
+        <div class="row">
+            <h1 class="titulo-3 text-center">¿Qué dicen nuestros clientes?</h1>
+        </div>
+      </div>
+      <!--Opiniones usuarios-->
+      <div class="usuarios align-items-center ms-5 ps-5">
+        <div class="row">
+            <div class="card col-sm-12 col-md-4 mb-4 ms-5 text-center ms-5 mb-3 mt-3 me-2 border-0" style="width:18rem;">
+                <img src="/assets/img/persona uno.png" class="card-img-top" alt="...">
+                <div class="opiniones text-center mt-3">
+                  <p>"CineXpress me sorprendió. La sala era muy cómoda, con asientos amplios y reclinables que hacían la experiencia aún más placentera. La proyección de la película fue impecable, con una imagen nítida y un sonido envolvente que realmente te sumergía en la historia".</p>
+                  <p class="nombre text-center">Álvaro</p>
+                
+                </div>
+              </div>
+              <div class="card col-md-4 mb-4 text-center ms-5 mb-3 mt-3 me-2 border-0 ms-5" style="width: 18rem;">
+                <img src="/assets/img/persona dos.png" class="card-img-top" alt="...">
+                <div class="opiniones text-center mt-3">
+                  <p>"Comprar los tickets online fue muy conveniente. El sitio es fácil de navegar, lo que me permitió elegir la película y la función que quería en cosa de minutos. Me gustó poder seleccionar mis asientos con anticipación".</p>
+                  <p class="nombre text-center">Ana</p>
+                
+                </div>
+              </div>
+              <div class="card col-md-4 mb-4 text-center ms-5 mb-3 mt-3 me-2 border-0 ms-5" style="width: 18rem;">
+                <img src="/assets/img/persona tres.png" class="card-img-top" alt="...">
+                <div class="opiniones text-center mt-3">
+                  <p>"La devolución de entradas en CineXpress fue expedita. Un día no pude asistir a una función por un imprevisto y decidí gestionar la devolución por la web. El proceso fue sencillo; solo tuve que ingresar mis datos y seguir pocos pasos. Recibí una respuesta rápida y, en poco tiempo, el reembolso se procesó sin complicaciones".</p>
+                  <p class="nombre text-center">Sofía</p>
+                
+                </div>
+              </div> 
+              <div class="opinion text-center mb-5">
+                    <button type="button" class="btn btn-danger">Ver más</button>
+              </div>  
+        </div>
+      </div>  
+      <!--Footer-->
+    <div class="container-fluid">
+        <div class="row">
+            <footer class="footer text-dark pt-5 pb-4">
+                <div class="container text-center text-md-start">
+                    <div class="row text-center text-md-start">
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 font-wight-bold text-light">Sobre CineXpress</h5>
+                            <hr class="mb-4">
+                            <p>
+                                <a href="#" class="text-light">Nosotros</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-light">Salas y formatos</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-light">Términos y condiciones</a>
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 font-wight-bold text-light">Soporte</h5>
+                            <hr class="mb-4">
+                            <p>
+                                <a href="#" class="text-light">Ayuda</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-light">Preguntas frecuentes</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-light">Devoluciones</a>
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h5 class="text-uppercase mb-4 font-wight-bold text-light">Contacto</h5>
+                            <hr class="mb-4">
+                            <p>
+                                <li class="fas fa-home me-3 text-light"></li><a href="#" class="text-light">Av. Apoquindo 2359. Santiago, Chile</a>
+                            </p>
+                            <p>
+                                <li class="fas fa-envelope me-3 text-light"></li><a href="#" class="text-light">Escríbenos</a>
+                            </p>
+                        </div>
+                        <hr class="mb-4">
+                        <div class="text-center text-light mb-2">
+                            <p>
+                                Copyright Todos los derechos reservados
+                                <a href="#">
+                                    <strong class="cine text-light">CineXpress</strong>
+                                </a>
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-light"> <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-light"> <i class="fab fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-light"> <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-light"> <i class="fab fa-x"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="text-light"> <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>         
+        </div>
+    </div>
+  </body>  
+</html>

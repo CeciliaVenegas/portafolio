@@ -1,0 +1,57 @@
+.btn{
+    background-color: #a80000;
+    border: none;
+}
+.card-title{
+    font-family: "Poppins", sans-serif;
+}
+
+.d-flex{
+    width: 1000px
+}
+.text-center{
+    font-family: "Poppins", sans-serif;
+}
+.container-fluid{
+    font-family: "Poppins", sans-serif;
+}
+.carousel-control-next-icon{
+    background-color: #a80000;
+}
+.carousel-control-prev-icon{
+    background-color: #a80000;
+}
+.footer{
+    background-color: #a80000;
+}
+.text-uppercase{
+    color: white;
+    
+}
+.container1{
+    text-align: center;
+}
+.text-light{
+    text-decoration: none;
+}
+.opiniones{
+    font-family: "Merriweather", serif;
+    font-size: small;
+}
+.usuarios{
+    display: flex;
+    justify-content: center;
+}
+.opinion{
+    display: flex;
+    justify-content: center
+}
+.nombre{
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+.card{
+    max-width: 100%;
+    
+}
